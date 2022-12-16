@@ -8,4 +8,12 @@ import { Component,Input,EventEmitter,Output } from '@angular/core';
 export class PostComponent {
   @Input('img') postImg =''
   @Output() imgSelected = new EventEmitter<string>()
+
+  constructor(){
+    console.log('constructor been called')
+  }
+
+  ngonInit(){
+    console.log('ngonInit been called')
+  }
 }
